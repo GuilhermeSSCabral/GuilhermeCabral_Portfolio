@@ -1,6 +1,6 @@
 import Icone from '../Icone/Icone'
 
-function Hero({nome, cargo, resumo, cidade}) {
+function Hero({ nome, cargo, resumo, cidade }) {
     return (
         <section className="hero" id="topo">
             <div className="container hero_linha">
@@ -17,7 +17,7 @@ function Hero({nome, cargo, resumo, cidade}) {
                     <div className="hero_acoes">
 
                         <a className="botao botao--primario" href='#projetos'>
-                            ver projetos <Icone nome="seta"/>
+                            ver projetos <Icone nome="seta" />
                         </a>
 
                         <a className="botao botao--primario" href='#contato'>
@@ -25,7 +25,12 @@ function Hero({nome, cargo, resumo, cidade}) {
                         </a>
                     </div>
                 </div>
+
+                <div className="janela" role="img" aria-label={`Trecho de codigo de dados de ${nome}`} >
+
+
+                </div>
             </div>
-        </section>
+        </section >
     )
 }
