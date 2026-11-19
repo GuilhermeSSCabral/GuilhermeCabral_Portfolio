@@ -28,6 +28,12 @@ function Hero({ nome, cargo, resumo, cidade }) {
 
                 <div className="janela" role="img" aria-label={`Trecho de codigo de dados de ${nome}`} >
 
+                    <div className="janela_codigo">
+                        <span className="janela_ponto"></span>
+                        <span className="janela_ponto"></span>
+                        <span className="janela_ponto"></span>
+                        <span className="janela_nome">perfil.js</span>
+                    </div>
 
                 </div>
             </div>
