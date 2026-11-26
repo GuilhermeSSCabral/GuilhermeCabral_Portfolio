@@ -11,7 +11,7 @@ import Badge from './components/Badge/Badge.jsx'
 import CardProjeto from './components/CardProjeto/CardProjeto.jsx'
 import Icone from './components/Icone/Icone.jsx'
 
-function App() { 
+function App() {
   return (
     <>
       <Header usuario={perfil.usuario} />
