@@ -8,8 +8,9 @@ import Secao from './components/Secao/Secao.jsx'
 import Perfil from './components/Perfil/Perfil.jsx'
 import Card from './components/Card/Card.jsx'
 import Badge from './components/Badge/Badge.jsx'
-import CardProjeto from './components/CardProjeto/CardProjeto.jsx'
 import Icone from './components/Icone/Icone.jsx'
+import Formacao from './components/Formacao/Formacao.jsx'
+import ListaProjetos from './components/ListaProjetos/ListaProjetos.jsx'
 
 function App() {
   return (
@@ -48,19 +49,16 @@ function App() {
           </div>
         </Secao>
 
+        <Secao id="formacao" alternada>
+          <p className="etiqueta-secao">02 / formação</p>
+          <h2 className="secao__titulo">Onde estudei</h2>
+          <Formacao itens={perfil.formacao} />
+        </Secao>
+
         <Secao id="projetos">
-          <p className="etiqueta-secao">02 / projetos</p>
+          <p className="etiqueta-secao">03 / projetos</p>
           <h2 className="secao__titulo">Projetos</h2>
-          <div className="grade-cartoes">
-            {projetos.map((projeto) => (
-              <CardProjeto
-                key={projeto.id}
-                titulo={projeto.titulo}
-                descricao={projeto.descricao}
-                tecnologias={projeto.tecnologias}
-              />
-            ))}
-          </div>
+          <ListaProjetos projetos={projetos} />
         </Secao>
 
         <Secao id="contato">
